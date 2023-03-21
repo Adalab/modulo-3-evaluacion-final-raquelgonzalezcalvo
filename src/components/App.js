@@ -1,9 +1,17 @@
 /* SECCIÓN DE IMPORT */
-import "...styles/App.scss";
+import { useEffect } from "react";
+import getDataApi from "../services/api";
+// import "...styles/App.scss";
 // - Imágenes
 
 /* SECCIÓN DEL COMPONENTE */
 function App() {
+  useEffect(() => {
+    getDataApi().then((cleanData) => {
+      console.log(cleanData);
+    });
+  }, []);
+
   /* VARIABLES ESTADO (DATOS) */
 
   /* EFECTOS (día 5) */
