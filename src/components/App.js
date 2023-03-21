@@ -12,6 +12,7 @@ import Filters from "./Filters";
 function App() {
   const [characterList, setCharacterList] = useState([]);
   const [filterName, setFilterName] = useState("");
+  const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
   /* VARIABLES ESTADO (DATOS) */
   /* EFECTOS (día 5) */
@@ -24,6 +25,10 @@ function App() {
 
   const handleFilterName = (value) => {
     setFilterName(value);
+  };
+
+  const handleFilterHouse = (value) => {
+    setFilterHouse(value);
   };
 
   const searchCharacter = characterList.filter((eachCharacter) => {
@@ -43,8 +48,13 @@ function App() {
         <h1 className="title">Harry Potter</h1>
       </header>
       <main>
-        <Filters></Filters>
-        <ListCharacter characterList={characterList}></ListCharacter>
+        <Filters
+          handleFilterName={handleFilterName}
+          handleFilterHouse={handleFilterHouse}
+          filterName={filterName}
+          filterHouse={filterHouse}
+        />
+        <ListCharacter characterList={searchCharacter}></ListCharacter>
       </main>
     </>
   );

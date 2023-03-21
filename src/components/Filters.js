@@ -1,10 +1,23 @@
+import FilterHouse from "./filterHouse";
 import FilterName from "./FilterName";
 
-function Filters() {
+function Filters({
+  handleFilterName,
+  handleFilterHouse,
+  filterName,
+  filterHouse,
+}) {
   return (
     <section className="filter">
       <form>
-        <FilterName></FilterName>
+        <FilterName
+          handleFilterName={handleFilterName}
+          filterName={filterName}
+        />
+        <FilterHouse
+          handleFilterHouse={handleFilterHouse}
+          filterHouse={filterHouse}
+        />
       </form>
     </section>
   );

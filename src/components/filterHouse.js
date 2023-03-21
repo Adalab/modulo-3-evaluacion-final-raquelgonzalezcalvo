@@ -1,6 +1,7 @@
-const FilterHouse = ({ handleSelectHouse, }) => {
+const FilterHouse = ({ handleFilterHouse, filterHouse }) => {
   const handleInput = (ev) => {
-    
+    ev.preventDefault();
+    handleFilterHouse(ev.target.value);
   };
   return (
     <label htmlFor="houses">
@@ -8,8 +9,8 @@ const FilterHouse = ({ handleSelectHouse, }) => {
       <select
         name="houses"
         id="houses"
-        onInput={}
-        value={}
+        onInput={handleInput}
+        value={filterHouse}
       >
         <option value="Gryffindor">Gryffindor</option>
         <option value="Slytherin">Slytherin</option>
