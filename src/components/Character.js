@@ -3,7 +3,7 @@ function Character() {
     <li className="li">
       <img
         className="image__character"
-        src=""
+        src="https://ik.imagekit.io/hpapi/harry.jpg"
         alt="Foto del personaje"
         title="Foto del personaje"
       ></img>

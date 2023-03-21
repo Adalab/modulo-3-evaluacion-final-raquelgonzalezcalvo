@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
-// import "...styles/App.scss";
+import reset from "../styles/core/reset.scss";
+import "../styles/App.scss";
 // - Imágenes
 
 /* SECCIÓN DEL COMPONENTE */
