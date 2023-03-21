@@ -4,7 +4,8 @@ import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
 import reset from "../styles/core/reset.scss";
 import "../styles/App.scss";
-import FilterName from "./FilterName";
+
+import Filters from "./Filters";
 // - Imágenes
 
 /* SECCIÓN DEL COMPONENTE */
@@ -12,6 +13,8 @@ function App() {
   const [characterList, setCharacterList] = useState([]);
   const [filterName, setFilterName] = useState("");
 
+  /* VARIABLES ESTADO (DATOS) */
+  /* EFECTOS (día 5) */
   useEffect(() => {
     getDataApi().then((cleanData) => {
       console.log(cleanData);
@@ -19,9 +22,15 @@ function App() {
     });
   }, []);
 
-  /* VARIABLES ESTADO (DATOS) */
+  const handleFilterName = (value) => {
+    setFilterName(value);
+  };
 
-  /* EFECTOS (día 5) */
+  const searchCharacter = characterList.filter((eachCharacter) => {
+    return eachCharacter.name
+      .toLocaleLowerCase()
+      .includes(filterName.toLocaleLowerCase());
+  });
 
   /* FUNCIONES HANDLER */
 
@@ -30,9 +39,13 @@ function App() {
   /* HTML */
   return (
     <>
-      <h1 className="title">Harry Potter</h1>
-      <ListCharacter characterList={characterList}></ListCharacter>
-      {/* <main class="main"> */}
+      <header>
+        <h1 className="title">Harry Potter</h1>
+      </header>
+      <main>
+        <Filters></Filters>
+        <ListCharacter characterList={characterList}></ListCharacter>
+      </main>
     </>
   );
 }

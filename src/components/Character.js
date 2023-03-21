@@ -1,6 +1,6 @@
 function Character({ eachCharacter }) {
   return (
-    <li className="li">
+    <li className="li" key={eachCharacter.id}>
       <img
         className="image__character"
         src={eachCharacter.image}
