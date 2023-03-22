@@ -6,12 +6,16 @@
   padding: 50px;
   border: solid;
   border-color: azure;
-  background-color: rgba(0, 0, 255, 0.393);
+  background-color: #800000;
+  width: 320px;
+  height: 430px;
   background-size: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  font-size: 20px;
 }
 .image-character {
   height: 295px;
   width: 210px;
+}
+.cards {
 }

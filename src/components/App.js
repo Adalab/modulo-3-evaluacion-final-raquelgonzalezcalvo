@@ -74,7 +74,10 @@ function App() {
                   filterName={filterName}
                   filterHouse={filterHouse}
                 />
-                <ListCharacter characterList={searchCharacter}></ListCharacter>
+                <ListCharacter
+                  characterList={searchCharacter}
+                  filterName={filterName}
+                ></ListCharacter>
               </>
             }
           ></Route>
