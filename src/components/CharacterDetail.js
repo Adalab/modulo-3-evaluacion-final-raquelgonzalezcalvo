@@ -3,23 +3,21 @@ function CharacterDetail({ characterFind }) {
   console.log(characterFind);
   return (
     <>
-      <section>
+      <section className="detail">
         <h2>Detalle de contacto</h2>
         <div className="div">
           <img
             className="image__character"
             src={characterFind.image}
-            alt="Foto del personaje"
-            title="Foto del personaje"
+            alt="characterimage"
+            title="character image"
           ></img>
-          <h3>{characterFind.name}</h3>
+          <h2>{characterFind.name}</h2>
           <h3>{characterFind.species}</h3>
           <h3>{characterFind.house}</h3>
           <h3>{characterFind.gender}</h3>
-          <h3>{characterFind.eyeColour}</h3>
-          <h3>{characterFind.ancestry}</h3>
         </div>
-        <Link to="/">Volver!</Link>
+        <Link to="/">Return</Link>
       </section>
     </>
   );

@@ -11,10 +11,9 @@ const getDataApi = (filterHouse) => {
             eachCharacter.image ||
             `https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter`,
           name: eachCharacter.name,
-          specie: eachCharacter.species,
+          species: eachCharacter.species,
           house: eachCharacter.house,
           gender: eachCharacter.gender,
-          eyecolor: eachCharacter.eyeColour,
           ancestry: eachCharacter.ancestry,
         };
       });

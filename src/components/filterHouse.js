@@ -5,21 +5,21 @@ const FilterHouse = ({ handleFilterHouse, filterHouse }) => {
   };
   return (
     <>
-      <label className="houses__label" htmlFor="houses">
-        Selecciona una casa
-        <select
-          className="houses__select"
-          name="houses"
-          id="houses"
-          onInput={handleInput}
-          value={filterHouse}
-        >
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Slytherin">Slytherin</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-        </select>
+      <label className="houses" htmlFor="houses">
+        Select a house:
       </label>
+      <select
+        className="houses-select"
+        name="houses"
+        id="houses"
+        onInput={handleInput}
+        value={filterHouse}
+      >
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+      </select>
     </>
   );
 };

@@ -6,16 +6,18 @@ function FilterName({ handleFilterName, filterName }) {
 
   return (
     <>
-      <label htmlFor="character-filter">Buscar por personaje</label>
-      <input
-        className="input-character"
-        type="search"
-        autoComplete="off"
-        name="search"
-        id="character-filter"
-        value={filterName}
-        onInput={handleInput}
-      />
+      <section className="character">
+        <label htmlFor="character-filter">Search by character:</label>
+        <input
+          className="input-character"
+          type="search"
+          autoComplete="off"
+          name="search"
+          id="character-filter"
+          value={filterName}
+          onInput={handleInput}
+        />
+      </section>
     </>
   );
 }

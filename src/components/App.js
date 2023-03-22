@@ -48,19 +48,16 @@ function App() {
 
   const { pathname } = useLocation();
   const dataUrl = matchPath("/character/:id", pathname);
-  console.log(pathname);
   const characterId = dataUrl !== null ? dataUrl.params.id : null;
-
   const characterFind = contactFiltered.find(
     (eachCharacter) => eachCharacter.id === characterId
   );
-  console.log(dataUrl);
 
   /* HTML */
   return (
     <>
-      <header>
-        <h1 className="title">Harry Potter</h1>
+      <header className="header">
+        {/* <img src="../images/header.jpeg" /> */}
       </header>
       <main>
         <Routes>

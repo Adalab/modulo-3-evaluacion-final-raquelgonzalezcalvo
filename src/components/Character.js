@@ -7,14 +7,13 @@ function Character({ eachCharacter }) {
         <img
           className="image-character"
           src={eachCharacter.image}
-          alt="Foto del personaje"
-          title="Foto del personaje"
+          alt="characterimage"
+          title="character image"
         ></img>
         <h3>{eachCharacter.name}</h3>
         <h3>{eachCharacter.species}</h3>
         <h3>{eachCharacter.house}</h3>
         <h3>{eachCharacter.gender}</h3>
-        <h3>{eachCharacter.eyeColour}</h3>
         <h3>{eachCharacter.ancestry}</h3>
       </Link>
     </li>
