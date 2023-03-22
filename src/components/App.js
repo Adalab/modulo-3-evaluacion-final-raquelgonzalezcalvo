@@ -6,6 +6,7 @@ import reset from "../styles/core/reset.scss";
 import "../styles/App.scss";
 
 import Filters from "./Filters";
+import { Routes, Route } from "react-router-dom";
 // - Imágenes
 
 /* SECCIÓN DEL COMPONENTE */
@@ -17,12 +18,13 @@ function App() {
   /* VARIABLES ESTADO (DATOS) */
   /* EFECTOS (día 5) */
   useEffect(() => {
-    getDataApi().then((cleanData) => {
+    getDataApi(filterHouse).then((cleanData) => {
       console.log(cleanData);
       setCharacterList(cleanData);
     });
-  }, []);
+  }, [filterHouse]);
 
+  /* FUNCIONES HANDLER */
   const handleFilterName = (value) => {
     setFilterName(value);
   };
@@ -37,7 +39,13 @@ function App() {
       .includes(filterName.toLocaleLowerCase());
   });
 
-  /* FUNCIONES HANDLER */
+  const contactFiltered = characterList.filter((eachCharacter) => {
+    if (filterHouse === "Gryffindor") {
+      return true;
+    } else {
+      return filterHouse === eachCharacter.house;
+    }
+  });
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
 
@@ -48,13 +56,22 @@ function App() {
         <h1 className="title">Harry Potter</h1>
       </header>
       <main>
-        <Filters
-          handleFilterName={handleFilterName}
-          handleFilterHouse={handleFilterHouse}
-          filterName={filterName}
-          filterHouse={filterHouse}
-        />
-        <ListCharacter characterList={searchCharacter}></ListCharacter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Filters
+                  handleFilterName={handleFilterName}
+                  handleFilterHouse={handleFilterHouse}
+                  filterName={filterName}
+                  filterHouse={filterHouse}
+                />
+                <ListCharacter characterList={searchCharacter}></ListCharacter>
+              </>
+            }
+          ></Route>
+        </Routes>
       </main>
     </>
   );
