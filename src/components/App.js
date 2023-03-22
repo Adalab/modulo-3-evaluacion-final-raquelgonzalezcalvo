@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
 import reset from "../styles/core/reset.scss";
+import CharacterDetail from "./CharacterDetail";
 import "../styles/App.scss";
 
 import Filters from "./Filters";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, matchPath, useLocation } from "react-router-dom";
 // - Imágenes
 
 /* SECCIÓN DEL COMPONENTE */
@@ -19,7 +20,7 @@ function App() {
   /* EFECTOS (día 5) */
   useEffect(() => {
     getDataApi(filterHouse).then((cleanData) => {
-      console.log(cleanData);
+      // console.log(cleanData);
       setCharacterList(cleanData);
     });
   }, [filterHouse]);
@@ -49,6 +50,15 @@ function App() {
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
 
+  const { pathname } = useLocation();
+  const dataUrl = matchPath("/contact/:id", pathname);
+  // console.log(dataUrl);
+  const characterId = dataUrl !== null ? dataUrl.params.id : null;
+
+  const characterFind = contactFiltered.find(
+    (eachCharacter) => eachCharacter.id === characterId
+  );
+
   /* HTML */
   return (
     <>
@@ -71,6 +81,10 @@ function App() {
               </>
             }
           ></Route>
+          <Route
+            path="/character/:id"
+            element={<CharacterDetail characterFind={characterFind} />}
+          />
         </Routes>
       </main>
     </>
