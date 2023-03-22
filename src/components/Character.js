@@ -5,7 +5,7 @@ function Character({ eachCharacter }) {
     <li className="li">
       <Link to={`/character/${eachCharacter.id}`}>
         <img
-          className="image__character"
+          className="image-character"
           src={eachCharacter.image}
           alt="Foto del personaje"
           title="Foto del personaje"

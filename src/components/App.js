@@ -5,22 +5,18 @@ import ListCharacter from "./ListCharacter";
 import reset from "../styles/core/reset.scss";
 import CharacterDetail from "./CharacterDetail";
 import "../styles/App.scss";
-
 import Filters from "./Filters";
 import { Routes, Route, matchPath, useLocation } from "react-router-dom";
-// - Imágenes
 
-/* SECCIÓN DEL COMPONENTE */
+/* VARIABLES ESTADO (DATOS) */
 function App() {
   const [characterList, setCharacterList] = useState([]);
   const [filterName, setFilterName] = useState("");
   const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
-  /* VARIABLES ESTADO (DATOS) */
-  /* EFECTOS (día 5) */
+  /* useEffect */
   useEffect(() => {
     getDataApi(filterHouse).then((cleanData) => {
-      // console.log(cleanData);
       setCharacterList(cleanData);
     });
   }, [filterHouse]);
@@ -59,6 +55,7 @@ function App() {
     (eachCharacter) => eachCharacter.id === characterId
   );
   console.log(dataUrl);
+
   /* HTML */
   return (
     <>

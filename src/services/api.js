@@ -7,9 +7,9 @@ const getDataApi = (filterHouse) => {
       const cleanData = data.map((eachCharacter) => {
         return {
           id: eachCharacter.id,
-          image: eachCharacter.image,
-          //  ||
-          // `https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter`,
+          image:
+            eachCharacter.image ||
+            `https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter`,
           name: eachCharacter.name,
           specie: eachCharacter.species,
           house: eachCharacter.house,
