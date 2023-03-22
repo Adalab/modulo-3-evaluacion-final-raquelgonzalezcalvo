@@ -1,4 +1,5 @@
-function CharacterDetail(characterFind) {
+function CharacterDetail({ characterFind }) {
+  console.log(characterFind);
   return (
     <>
       <h2>Detalle de contacto</h2>

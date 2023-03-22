@@ -51,14 +51,14 @@ function App() {
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
 
   const { pathname } = useLocation();
-  const dataUrl = matchPath("/contact/:id", pathname);
-  // console.log(dataUrl);
+  const dataUrl = matchPath("/character/:id", pathname);
+  console.log(pathname);
   const characterId = dataUrl !== null ? dataUrl.params.id : null;
 
   const characterFind = contactFiltered.find(
     (eachCharacter) => eachCharacter.id === characterId
   );
-
+  console.log(dataUrl);
   /* HTML */
   return (
     <>
