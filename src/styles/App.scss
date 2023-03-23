@@ -5,51 +5,6 @@
   height: 400px;
   background-repeat: no-repeat;
 }
-.character {
-  padding: 40px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-}
-.input-character {
-  margin-left: 10px;
-}
-.houses {
-  margin-left: 550px;
-  font-size: 30px;
-
-  margin-right: 10px;
-}
-.houses-section {
-  padding: 200px;
-}
-.houses-select {
-}
-.ul {
-}
-.li {
-  padding: 50px;
-  border: solid;
-  padding-top: 40px;
-  margin: 30px;
-  border-color: azure;
-  background-color: #800000;
-  width: 320px;
-  height: 450px;
-  background-size: 20px;
-  font-size: 18px;
-}
-
-.image-character {
-  height: 295px;
-  width: 210px;
-}
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-decoration: none;
-  padding-left: 50px;
-}
 .detail {
   padding: 50px;
   border: solid;

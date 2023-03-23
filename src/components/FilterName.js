@@ -1,3 +1,5 @@
+import "../styles/components/FilterName.scss";
+
 function FilterName({ handleFilterName, filterName }) {
   const handleInput = (ev) => {
     ev.preventDefault();
@@ -6,10 +8,10 @@ function FilterName({ handleFilterName, filterName }) {
 
   return (
     <>
-      <section className="character">
-        <label htmlFor="character-filter">Search by character:</label>
+      <section className="form__names">
+        <label htmlFor="form__names-label">Search by character:</label>
         <input
-          className="input-character"
+          className="form__names-input"
           type="search"
           autoComplete="off"
           name="search"

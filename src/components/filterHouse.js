@@ -1,15 +1,17 @@
+import "../styles/components/FilterHouse.scss";
+
 const FilterHouse = ({ handleFilterHouse, filterHouse }) => {
   const handleInput = (ev) => {
     ev.preventDefault();
     handleFilterHouse(ev.target.value);
   };
   return (
-    <>
-      <label className="houses" htmlFor="houses">
+    <section className="form__houses">
+      <label className="form__houses-label" htmlFor="houses">
         Select a house:
       </label>
       <select
-        className="houses-select"
+        className="form__houses-select"
         name="houses"
         id="houses"
         onInput={handleInput}
@@ -20,7 +22,7 @@ const FilterHouse = ({ handleFilterHouse, filterHouse }) => {
         <option value="Hufflepuff">Hufflepuff</option>
         <option value="Ravenclaw">Ravenclaw</option>
       </select>
-    </>
+    </section>
   );
 };
 export default FilterHouse;

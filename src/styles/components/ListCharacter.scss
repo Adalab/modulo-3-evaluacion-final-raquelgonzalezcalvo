@@ -1,0 +1,15 @@
+@import "../core/reset.scss";
+
+.characters {
+  &__List {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+  }
+  &__error {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: red;
+  }
+}
