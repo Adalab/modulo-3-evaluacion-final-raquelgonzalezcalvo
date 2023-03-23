@@ -1,23 +1,29 @@
 import { Link } from "react-router-dom";
+import "../styles/components/CharacterDetail.scss";
+
 function CharacterDetail({ characterFind }) {
-  console.log(characterFind);
   return (
     <>
-      <section className="detail">
-        <h2>Detalle de contacto</h2>
-        <div className="div">
-          <img
-            className="image__character"
-            src={characterFind.image}
-            alt="characterimage"
-            title="character image"
-          ></img>
-          <h2>{characterFind.name}</h2>
-          <h3>{characterFind.species}</h3>
-          <h3>{characterFind.house}</h3>
-          <h3>{characterFind.gender}</h3>
+      <section className="CharacterSection">
+        <div className="return">
+          <Link to="/">Return</Link>
         </div>
-        <Link to="/">Return</Link>
+        <section className="character">
+          <article className="character__DetailItem">
+            <img
+              className="character__DetailItem-img"
+              src={characterFind.image}
+              alt="characterimage"
+              title="character image"
+            />
+            <section className="charInfo">
+              <h2 className="charInfo-h2">{characterFind.name}</h2>
+              <h3 className="charInfo-h3">{characterFind.species}</h3>
+              <h3 className="charInfo-h3">{characterFind.house}</h3>
+              <h3 className="charInfo-h3">{characterFind.gender}</h3>
+            </section>
+          </article>
+        </section>
       </section>
     </>
   );

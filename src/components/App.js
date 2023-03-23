@@ -1,10 +1,10 @@
+/* Styles */
+import "../styles/App.scss";
 /* SECCIÓN DE IMPORT */
 import { useEffect, useState } from "react";
 import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
-import reset from "../styles/core/reset.scss";
 import CharacterDetail from "./CharacterDetail";
-import "../styles/App.scss";
 import Filters from "./Filters";
 import { Routes, Route, matchPath, useLocation } from "react-router-dom";
 
@@ -57,7 +57,7 @@ function App() {
   return (
     <>
       <header className="header">
-        {/* <img src="../images/header.jpeg" /> */}
+        {/* <img src="../../images/header.jpeg" alt="picture" /> */}
       </header>
       <main>
         <Routes>

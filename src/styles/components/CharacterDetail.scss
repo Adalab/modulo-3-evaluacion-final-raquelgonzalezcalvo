@@ -1,0 +1,21 @@
+@import "../core/reset.scss";
+
+.character {
+  padding: 50px;
+  border: solid;
+  padding-top: 40px;
+  margin: 30px;
+  border-color: azure;
+  background-color: #800000;
+  width: 320px;
+  height: 450px;
+  background-size: 20px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  &__DetailItem {
+    &-img {
+      height: 295px;
+      width: 210px;
+    }
+  }
+}
