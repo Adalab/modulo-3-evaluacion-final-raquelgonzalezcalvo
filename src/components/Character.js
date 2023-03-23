@@ -13,19 +13,19 @@ function Character({ eachCharacter }) {
             title="character image"
           />
           <h2 className="characters___Articles___Item--h2">
-            {eachCharacter.name}
+            Name: {eachCharacter.name}
           </h2>
           <h3 className="characters___Articles___Item--h3">
-            {eachCharacter.species}
+            Specie: {eachCharacter.species}
           </h3>
           <h3 className="characters___Articles___Item--h3">
-            {eachCharacter.house}
+            House: {eachCharacter.house}
           </h3>
           <h3 className="characters___Articles___Item--h3">
-            {eachCharacter.gender}
+            Gender: {eachCharacter.gender}
           </h3>
           <h3 className="characters___Articles___Item--h3">
-            {eachCharacter.ancestry}
+            Ancestry: {eachCharacter.ancestry}
           </h3>
         </article>
       </Link>

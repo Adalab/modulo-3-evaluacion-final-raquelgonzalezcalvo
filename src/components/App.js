@@ -1,12 +1,13 @@
 /* Styles */
 import "../styles/App.scss";
-/* SECCIÓN DE IMPORT */
+/* HOOKS */
 import { useEffect, useState } from "react";
+import { Routes, Route, matchPath, useLocation } from "react-router-dom";
+/* SECCIÓN DE IMPORT */
 import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
 import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
-import { Routes, Route, matchPath, useLocation } from "react-router-dom";
 
 /* VARIABLES ESTADO (DATOS) */
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const [filterName, setFilterName] = useState("");
   const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
-  /* useEffect */
+  /* USEEFFECT */
   useEffect(() => {
     getDataApi(filterHouse).then((cleanData) => {
       setCharacterList(cleanData);
@@ -30,12 +31,14 @@ function App() {
     setFilterHouse(value);
   };
 
+  /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
+  //filter name
   const searchCharacter = characterList.filter((eachCharacter) => {
     return eachCharacter.name
       .toLocaleLowerCase()
       .includes(filterName.toLocaleLowerCase());
   });
-
+  //filter house
   const contactFiltered = characterList.filter((eachCharacter) => {
     if (filterHouse === "Gryffindor") {
       return true;
@@ -44,8 +47,7 @@ function App() {
     }
   });
 
-  /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
-
+  /* ROUTES */
   const { pathname } = useLocation();
   const dataUrl = matchPath("/character/:id", pathname);
   const characterId = dataUrl !== null ? dataUrl.params.id : null;
@@ -56,9 +58,7 @@ function App() {
   /* HTML */
   return (
     <>
-      <header className="header">
-        {/* <img src="../../images/header.jpeg" alt="picture" /> */}
-      </header>
+      <header className="header"></header>
       <main>
         <Routes>
           <Route
@@ -88,7 +88,4 @@ function App() {
   );
 }
 
-/* PROP-TYPES */
-
-/* EXPORT DEL COMPONENTE */
 export default App;

@@ -17,10 +17,10 @@ function CharacterDetail({ characterFind }) {
               title="character image"
             />
             <section className="charInfo">
-              <h2 className="charInfo-h2">{characterFind.name}</h2>
-              <h3 className="charInfo-h3">{characterFind.species}</h3>
-              <h3 className="charInfo-h3">{characterFind.house}</h3>
-              <h3 className="charInfo-h3">{characterFind.gender}</h3>
+              <h2 className="charInfo-h2">Name: {characterFind.name}</h2>
+              <h3 className="charInfo-h3">Specie: {characterFind.species}</h3>
+              <h3 className="charInfo-h3">House: {characterFind.house}</h3>
+              <h3 className="charInfo-h3">Gender: {characterFind.gender}</h3>
             </section>
           </article>
         </section>

@@ -1,5 +1,6 @@
 import FilterHouse from "./filterHouse";
 import FilterName from "./FilterName";
+import "../styles/components/Filters.scss";
 
 function Filters({
   handleFilterName,
