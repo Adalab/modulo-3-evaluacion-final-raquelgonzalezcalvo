@@ -14,7 +14,6 @@ const getDataApi = (filterHouse) => {
           species: eachCharacter.species,
           house: eachCharacter.house,
           gender: eachCharacter.gender,
-          ancestry: eachCharacter.ancestry,
         };
       });
 

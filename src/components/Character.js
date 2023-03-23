@@ -24,9 +24,6 @@ function Character({ eachCharacter }) {
           <h3 className="characters___Articles___Item--h3">
             Gender: {eachCharacter.gender}
           </h3>
-          <h3 className="characters___Articles___Item--h3">
-            Ancestry: {eachCharacter.ancestry}
-          </h3>
         </article>
       </Link>
     </li>
