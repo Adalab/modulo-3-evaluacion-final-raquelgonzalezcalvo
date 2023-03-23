@@ -4,9 +4,11 @@ import "../styles/components/CharacterDetail.scss";
 function CharacterDetail({ characterFind }) {
   return (
     <>
-      <section className="CharacterSection">
+      <section className="characterSection">
         <div className="return">
-          <Link to="/">Return</Link>
+          <Link className="link" to="/">
+            Return
+          </Link>
         </div>
         <section className="character">
           <article className="character__DetailItem">
@@ -17,7 +19,7 @@ function CharacterDetail({ characterFind }) {
               title="character image"
             />
             <section className="charInfo">
-              <h2 className="charInfo-h2">Name: {characterFind.name}</h2>
+              <h3 className="charInfo-h2">Name: {characterFind.name}</h3>
               <h3 className="charInfo-h3">Specie: {characterFind.species}</h3>
               <h3 className="charInfo-h3">House: {characterFind.house}</h3>
               <h3 className="charInfo-h3">Gender: {characterFind.gender}</h3>

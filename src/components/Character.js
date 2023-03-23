@@ -15,15 +15,15 @@ function Character({ eachCharacter }) {
           <h2 className="characters___Articles___Item--h2">
             Name: {eachCharacter.name}
           </h2>
-          <h3 className="characters___Articles___Item--h3">
+          <h2 className="characters___Articles___Item--h2">
             Specie: {eachCharacter.species}
-          </h3>
-          <h3 className="characters___Articles___Item--h3">
+          </h2>
+          <h2 className="characters___Articles___Item--h2">
             House: {eachCharacter.house}
-          </h3>
-          <h3 className="characters___Articles___Item--h3">
+          </h2>
+          <h2 className="characters___Articles___Item--h2">
             Gender: {eachCharacter.gender}
-          </h3>
+          </h2>
         </article>
       </Link>
     </li>

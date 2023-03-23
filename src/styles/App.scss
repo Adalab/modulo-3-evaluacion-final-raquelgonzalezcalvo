@@ -1,7 +1,11 @@
 @import "core/reset";
 
 .header {
-  background-image: url("../images/header.jpeg");
   height: 500px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
