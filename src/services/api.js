@@ -1,3 +1,4 @@
+import harrypotter from "../images/harrypotter.jpg";
 const getDataApi = (filterHouse) => {
   return fetch(
     `https://hp-api.onrender.com/api/characters/house/${filterHouse}`
@@ -7,9 +8,7 @@ const getDataApi = (filterHouse) => {
       const cleanData = data.map((eachCharacter) => {
         return {
           id: eachCharacter.id,
-          image:
-            eachCharacter.image ||
-            `https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter`,
+          image: eachCharacter.image || harrypotter,
           name: eachCharacter.name,
           species: eachCharacter.species,
           house: eachCharacter.house,

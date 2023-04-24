@@ -2,6 +2,8 @@
 
 .characterSection {
   background-color: #ffdb5878;
+  background-image: url(../../images/fondo.jpg);
+  // background-repeat: no-repeat;
 }
 .return {
   padding: 50px;
@@ -14,6 +16,9 @@
   padding: 5px;
   font-size: 30px;
   color: black;
+  &:hover {
+    background-color: #ffdb5878;
+  }
 }
 
 .character {
