@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.b767d96f.css",
-    "main.js": "./static/js/main.48a4d462.js",
+    "main.css": "./static/css/main.6e7c95bb.css",
+    "main.js": "./static/js/main.b3c0dfa9.js",
     "static/media/fondo.png": "./static/media/fondo.56010aca1944c7821ee2.png",
     "static/media/header.jpg": "./static/media/header.f504b629e59a211e0464.jpg",
     "static/media/fondoSearch.jpg": "./static/media/fondoSearch.330929cc6a52ad05789f.jpg",
+    "static/media/fondo.jpg": "./static/media/fondo.eb77604ae40eb7d6e838.jpg",
+    "static/media/harrypotter.jpg": "./static/media/harrypotter.f505f4cc409fd0f51211.jpg",
     "index.html": "./index.html",
-    "main.b767d96f.css.map": "./static/css/main.b767d96f.css.map",
-    "main.48a4d462.js.map": "./static/js/main.48a4d462.js.map"
+    "main.6e7c95bb.css.map": "./static/css/main.6e7c95bb.css.map",
+    "main.b3c0dfa9.js.map": "./static/js/main.b3c0dfa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b767d96f.css",
-    "static/js/main.48a4d462.js"
+    "static/css/main.6e7c95bb.css",
+    "static/js/main.b3c0dfa9.js"
   ]
 }
