@@ -9,18 +9,21 @@ function Filters({
   filterHouse,
 }) {
   return (
-    <section className="filter">
-      <form>
-        <FilterName
-          handleFilterName={handleFilterName}
-          filterName={filterName}
-        />
-        <FilterHouse
-          handleFilterHouse={handleFilterHouse}
-          filterHouse={filterHouse}
-        />
-      </form>
-    </section>
+    <>
+      <header className="header"></header>
+      <section className="filter">
+        <form>
+          <FilterName
+            handleFilterName={handleFilterName}
+            filterName={filterName}
+          />
+          <FilterHouse
+            handleFilterHouse={handleFilterHouse}
+            filterHouse={filterHouse}
+          />
+        </form>
+      </section>
+    </>
   );
 }
 export default Filters;

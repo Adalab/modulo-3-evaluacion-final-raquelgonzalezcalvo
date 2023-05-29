@@ -6,7 +6,7 @@ function CharacterDetail({ characterFind }) {
     <>
       <section className="characterSection">
         <div className="return">
-          <Link className="link" to="/">
+          <Link className="link" to="/list">
             GO BACK
             <i class="fa-sharp fa-solid fa-wand-sparkles"></i>
           </Link>

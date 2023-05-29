@@ -1,5 +1,15 @@
 @import "../core/reset.scss";
 
+.header {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/header.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
 .characters {
   &__List {
     display: grid;
@@ -7,6 +17,7 @@
     text-decoration: none;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-image: url("../../images/fondo.png");
+    // background-position: center center;
   }
   &__error {
     display: flex;

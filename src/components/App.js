@@ -8,6 +8,7 @@ import getDataApi from "../services/api";
 import ListCharacter from "./ListCharacter";
 import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
+import Landing from "./Landing";
 
 /* VARIABLES ESTADO (DATOS) */
 function App() {
@@ -58,11 +59,11 @@ function App() {
   /* HTML */
   return (
     <>
-      <header className="header"></header>
       <main>
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route
-            path="/"
+            path="/list"
             element={
               <>
                 <Filters
