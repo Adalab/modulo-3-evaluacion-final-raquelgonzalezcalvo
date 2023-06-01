@@ -1,6 +1,16 @@
 @import "../core/reset.scss";
 
 .filter {
-  padding-bottom: 40px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
   background-image: url("../../images/fondoSearch.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  // height: 40vh;
+
+  &__img {
+    height: 50px;
+  }
 }
