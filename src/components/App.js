@@ -59,7 +59,7 @@ function App() {
   /* HTML */
   return (
     <>
-      <main>
+      <main className="main">
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route

@@ -13,7 +13,6 @@ function Filters({
   return (
     <>
       <header className="header"></header>
-
       <section className="filter">
         <form>
           <Link to={"/"} className="filter__link">
