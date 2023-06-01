@@ -23,3 +23,21 @@
     }
   }
 }
+@media (max-width: 320px) {
+  .characters {
+    &___Articles {
+      width: 80%;
+      height: 450px;
+      padding-bottom: 80px;
+      &___Item {
+        &--h2 {
+        }
+        &--img {
+          height: 250px;
+          width: 170px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

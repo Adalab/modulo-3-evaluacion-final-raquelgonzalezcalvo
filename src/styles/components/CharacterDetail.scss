@@ -1,28 +1,31 @@
 @import "../core/reset.scss";
 
-.characterSection {
-  background-color: #ffdb5878;
-  background-image: url(../../images/fondo.jpg);
-}
-.return {
-  padding: 50px;
-}
-.link {
-  background-color: #800000;
-  border-radius: 10px;
-  width: 100px;
-  height: 40px;
-  padding: 5px;
-  font-size: 30px;
-  color: black;
-  &:hover {
-    background-color: #ffdb5878;
-  }
-}
-
-.character {
+.container {
+  background-image: url(../../images/list.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  &-back {
+    padding-right: 20px;
+  }
+}
+.button {
+  margin-left: 30px;
+  font-family: "Harry Potter", sans-serif;
+  background-color: #ffe897;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  :hover {
+    background-color: #800000;
+  }
+}
+.character {
   &__DetailItem {
     padding: 50px;
     border: solid;
@@ -39,6 +42,31 @@
     &-img {
       height: 295px;
       width: 210px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    &-back {
+    }
+  }
+  .button {
+    margin-left: 30px;
+    font-family: "Harry Potter", sans-serif;
+    background-color: #ffe897;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    :hover {
+      background-color: #800000;
+    }
+  }
+  .character {
+    &__DetailItem {
+      &-img {
+      }
     }
   }
 }

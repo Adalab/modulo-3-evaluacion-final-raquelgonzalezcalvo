@@ -11,18 +11,52 @@
 }
 
 .characters {
+  background-image: url("../../images/fondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &__List {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    // text-align: center;
     text-decoration: none;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-image: url("../../images/fondo.png");
-    // background-position: center center;
   }
   &__error {
     display: flex;
     justify-content: center;
     font-size: 18px;
     color: red;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+  }
+  .characters {
+    &__List {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__error {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      color: red;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .characters {
+    &__List {
+      display: grid;
+      grid-template-columns: 1fr;
+      // text-align: center;
+    }
+    &__error {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      color: red;
+    }
   }
 }

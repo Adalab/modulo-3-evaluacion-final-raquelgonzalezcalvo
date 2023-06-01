@@ -1,4 +1,5 @@
 @import "../core/reset.scss";
+@import url("https://fonts.cdnfonts.com/css/harry-potter");
 
 .landing {
   background-image: url("../../images/fondo.png");
@@ -9,6 +10,7 @@
   align-items: center;
   justify-content: flex-end;
   &__btn {
+    font-family: "Harry Potter", sans-serif;
     margin-right: 50px;
     background-color: transparent;
     cursor: pointer;
@@ -19,10 +21,21 @@
     margin-bottom: 200px;
     box-shadow: 0px 10px 10px black;
     :hover {
-      background-color: #800000;
+      // box-shadow: 1px 2px 10px 1px var(#800000);
     }
   }
   &__characters {
     height: 50%;
+  }
+}
+
+@media (max-width: 352px) {
+  .landing {
+    overflow: hidden;
+    &__btn {
+    }
+    &__characters {
+      padding-left: 30px;
+    }
   }
 }
