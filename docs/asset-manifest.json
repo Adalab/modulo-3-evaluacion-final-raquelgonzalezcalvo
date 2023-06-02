@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.b433d0cf.css",
-    "main.js": "./static/js/main.172fd55e.js",
+    "main.css": "./static/css/main.452d59bc.css",
+    "main.js": "./static/js/main.d870c204.js",
     "static/media/fondo.png": "./static/media/fondo.56010aca1944c7821ee2.png",
     "static/media/enter.png": "./static/media/enter.7a66ff71442705bc76c2.png",
     "static/media/list.jpg": "./static/media/list.203bbcc477b44d9d63dd.jpg",
-    "static/media/header.jpg": "./static/media/header.f504b629e59a211e0464.jpg",
-    "static/media/fondoSearch.jpg": "./static/media/fondoSearch.330929cc6a52ad05789f.jpg",
+    "static/media/home2.png": "./static/media/home2.74de4da1f7224a3091ed.png",
+    "static/media/Logo-Harry-potter.png": "./static/media/Logo-Harry-potter.3bd3c6a45ac7610f5726.png",
     "static/media/harrypotter.jpg": "./static/media/harrypotter.f505f4cc409fd0f51211.jpg",
     "index.html": "./index.html",
-    "main.b433d0cf.css.map": "./static/css/main.b433d0cf.css.map",
-    "main.172fd55e.js.map": "./static/js/main.172fd55e.js.map"
+    "main.452d59bc.css.map": "./static/css/main.452d59bc.css.map",
+    "main.d870c204.js.map": "./static/js/main.d870c204.js.map"
   },
   "entrypoints": [
-    "static/css/main.b433d0cf.css",
-    "static/js/main.172fd55e.js"
+    "static/css/main.452d59bc.css",
+    "static/js/main.d870c204.js"
   ]
 }
