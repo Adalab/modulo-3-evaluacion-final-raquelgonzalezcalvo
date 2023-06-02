@@ -14,9 +14,9 @@ function Filters({
     <>
       <header className="header"></header>
       <section className="filter">
-        <form>
+        <form className="form">
           <Link to={"/"} className="filter__link">
-            <img src={home} alt="glasses" className="filter__img" />
+            <img src={home} alt="ball" className="filter__img" />
           </Link>
           <FilterName
             handleFilterName={handleFilterName}

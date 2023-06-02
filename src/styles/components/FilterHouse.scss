@@ -2,6 +2,12 @@
 @import url("https://fonts.cdnfonts.com/css/harry-potter");
 
 .form {
+  background-image: url("../../images/fondo.jpg");
+  width: 70%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
   &__houses {
     font-family: "Harry Potter", sans-serif;
     font-size: 30px;

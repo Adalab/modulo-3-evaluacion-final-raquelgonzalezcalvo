@@ -1,6 +1,14 @@
 @import "../core/reset.scss";
 @import url("https://fonts.cdnfonts.com/css/harry-potter");
 
+.header {
+  background-image: url("../../images/Logo-Harry-potter.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
 .form {
   &__names {
     font-size: 30px;

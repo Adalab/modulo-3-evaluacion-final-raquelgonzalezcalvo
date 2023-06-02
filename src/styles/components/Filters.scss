@@ -1,11 +1,8 @@
 @import "../core/reset.scss";
 
 .filter {
-  background-position: center center;
-  background-size: cover;
-  height: 400px;
-
   &__img {
+    cursor: pointer;
     height: 50px;
   }
 }
