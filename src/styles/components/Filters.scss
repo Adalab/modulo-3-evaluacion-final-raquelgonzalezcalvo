@@ -1,6 +1,10 @@
 @import "../core/reset.scss";
 
 .filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
   &__img {
     cursor: pointer;
     height: 50px;

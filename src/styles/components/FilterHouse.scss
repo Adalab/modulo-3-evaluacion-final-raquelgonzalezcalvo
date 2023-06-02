@@ -3,7 +3,6 @@
 
 .form {
   background-image: url("../../images/fondo.jpg");
-  width: 70%;
   height: 170px;
   display: flex;
   justify-content: center;
@@ -17,8 +16,6 @@
       padding: 5px;
     }
     &-select {
-      margin-top: 5px;
-      height: 30px;
     }
   }
 }
