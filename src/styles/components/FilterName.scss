@@ -2,11 +2,18 @@
 @import url("https://fonts.cdnfonts.com/css/harry-potter");
 
 .header {
-  background-image: url("../../images/Logo-Harry-potter.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
+  max-width: 700px;
+
+  margin: 0 auto;
+  padding-top: 50px;
+  &-img {
+    width: 100%;
+  }
+  // background-image: url("../../images/Logo-Harry-potter.png");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // height: 400px;
 }
 
 .form {
