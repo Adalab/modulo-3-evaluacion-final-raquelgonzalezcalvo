@@ -19,28 +19,14 @@
   }
   .characters {
     &__List {
-      display: grid;
       grid-template-columns: 1fr 1fr;
-    }
-    &__error {
-      display: flex;
-      justify-content: center;
-      font-size: 18px;
-      color: red;
     }
   }
 }
 @media (max-width: 320px) {
   .characters {
     &__List {
-      display: grid;
       grid-template-columns: 1fr;
-    }
-    &__error {
-      display: flex;
-      justify-content: center;
-      font-size: 18px;
-      color: red;
     }
   }
 }
