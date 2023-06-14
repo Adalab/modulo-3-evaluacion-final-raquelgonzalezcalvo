@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-decoration: none;
+    justify-items: center;
+
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   &__error {
@@ -15,8 +17,6 @@
   }
 }
 @media (max-width: 768px) {
-  .header {
-  }
   .characters {
     &__List {
       grid-template-columns: 1fr 1fr;
