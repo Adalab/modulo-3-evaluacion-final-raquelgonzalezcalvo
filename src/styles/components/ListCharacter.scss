@@ -2,8 +2,12 @@
 
 .characters {
   &__List {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row-gap: 100px;
+    grid-column-gap: 250px;
     text-decoration: none;
     justify-items: center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -18,14 +22,14 @@
 @media (max-width: 768px) {
   .characters {
     &__List {
-      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: 1fr 1fr;
     }
   }
 }
 @media (max-width: 320px) {
   .characters {
     &__List {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
     }
   }
 }
